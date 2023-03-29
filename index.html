@@ -19,66 +19,109 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					screens: {
+						sm: '480px',
+						md: '768px',
+						lg: '976px',
+						xl: '1440px',
+					},
+					extend: {
+						colors: {
+							clifford: '#da373d',
+						},
+					},
+				},
+			};
+		</script>
 	</head>
 
 	<body>
-		<section class="header" id="home">
-			<div class="head">
-				<div class="logo">
-					<a href="index.html">DEEN'S HELPERS</a>
-				</div>
-				<div class="navlink">
-					<ul>
-						<li><a href="#home">HOME</a></li>
-						<li><a href="#about">ABOUT</a></li>
-						<li><a href="#donate">DONATE</a></li>
-						<li><a href="#ourBlog">OUR BLOG</a></li>
-						<li><a href="#contact">CONTACT US</a></li>
-					</ul>
-				</div>
+		<header class="head">
+			<div class="logo">
+				<a href="index.html">DEEN'S HELPERS</a>
 			</div>
-
-			<div class="text-box">
-				<h1>DEEN'S HELPERS</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, fugiat
-					assumenda? Impedit earum, id eligendi molestiae ea totam?
-				</p>
-				<a href="" class="btn">Visit To Know More</a>
-				<a href="" class="In">Sign In</a>
+			<div class="navlink">
+				<ul>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#donate">DONATE</a></li>
+					<li><a href="#our-activities">OUR ACTIVITIES</a></li>
+					<li><a href="#whatwedo">WHAT WE DO</a></li>
+				</ul>
 			</div>
-		</section>
-
-		<section class="About-us-wapper" id="about">
-			<h1>About Us</h1>
-
-			<div class="About-us">
-				<div class="about-us-text">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
-					saepe molestiae, debitis deserunt rem eligendi tenetur soluta odio
-					sequi quam fuga hic adipisci ipsum? Qui numquam sit, ipsum pariatur
-					molestias provident explicabo dignissimos. Laborum voluptatibus
-					tenetur, eveniet explicabo mollitia, iusto assumenda magni repellendus
-					nesciunt molestias temporibus maxime ducimus eius ab commodi adipisci?
-					Beatae asperiores perspiciatis, numquam harum veritatis maxime rem
-					dolorem fugit saepe amet totam doloribus sequi eveniet suscipit,
-					minima possimus fuga veniam officiis dolores tempore. Maiores sed
-					deleniti ab temporibus maxime, consectetur sit molestias nemo ut
-					explicabo veritatis officiis similique. Perferendis id veritatis
-					asperiores quod, itaque accusamus facilis perspiciatis.
-				</div>
-
-				<div class="About-us-img">
-					<img src="image.jpg" alt="" />
+		</header>
+		<section class="headline-section section" id="home">
+			<div class="headline-container">
+				<div class="headline text-justify">
+					<h1>Give a helping hand to those who need it!</h1>
+					<p>Helping is one the best things to do.</p>
+					<div class="headline-btns">
+						<a href="" class="btn">What We Do?</a>
+						<a href="" class="In">Donate</a>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="form-wapper-donate" id="donate">
+		<section class="section py-[100px]" id="about">
+			<div class="intro-us">
+				<div
+					class="intro-us-content flex justify-center align-center w-100 flex-col md:flex-row"
+				>
+					<div
+						class="intro-us-text flex justify-center flex-col md:border-black md:border-r-2 md:max-w-[50%]"
+					>
+						<h1 class="text-3xl font-bold sm:text-center md:text-justify">
+							Help is our main goal
+						</h1>
+						<p class="mt-2 md:mr-[60px] sm:text-center md:text-justify">
+							JDC Welfare Organization is a non-profit organization dedicated to
+							serving without any discrimination of caste, creed, and color. We
+							believe that everyone deserves equality, food, shelter, access to
+							education, & healthcare facilities and it is our goal to work
+							towards creating a world where equality triumphs.
+						</p>
+					</div>
+					<div class="intro-us-text mt-8 md:mt-0 md:ml-[60px] md:max-w-[50%]">
+						<h1
+							class="text-xl uppercase font-bold sm:text-center md:text-justify"
+						>
+							About Deen Helpers (NGO)
+						</h1>
+						<h1 class="text-3xl font-ligth sm:text-center md:text-justify">
+							Charity Efforts Are For Happiness
+						</h1>
+						<p class="mt-2 md:mr-[60px] sm:text-center md:text-justify">
+							Since our inception in 2009, from a small camp that provided
+							rescue and disaster management services. Expanded its branches and
+							reach out to an effective infrastructure that deals with social
+							services, and welfare nationwide. To manifest this into reality we
+							have been working tirelessly, currently, we have 89 successful
+							projects facilitating people in sectors including health, poverty
+							alleviation, disaster management, food, shelter, education &
+							social causes. Our team of dedicated professionals and volunteers
+							are committed to making a positive impact in the lives of those we
+							serve.
+						</p>
+
+						<div class="mt-8 md:mt-3 text-2xl">
+							<span>We are Distributing </span
+							><span class="text-3xl font-[500] random-word"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="form-wrapper-donate" id="donate">
 			<h1>DONATE NOW</h1>
 
-			<div class="form-wapper">
-				<div class="form-wapper-input">
+			<div class="form-wrapper">
+				<div class="form-wrapper-input">
 					<input type="text" placeholder="Name" />
 					<input type="email" placeholder="Email" />
 					<div class="donate">
@@ -87,7 +130,7 @@
 					<a href="" class="btn Now">Donate Now</a>
 				</div>
 
-				<div class="form-wapper-text">
+				<div class="form-wrapper-text">
 					<h2>Let's Donate to needy people for better lives</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
@@ -99,65 +142,83 @@
 			</div>
 		</section>
 
-		<section class="Our-Blog-wapper" id="ourBlog">
-			<h1>Our Blog</h1>
-			<p>
-				Latest News & articles <br />
-				directly form our blog
-			</p>
+		<section
+			class="activies-section section pt-[80px] pb-[100px]"
+			id="our-activities"
+		>
+			<h1 class="text-3xl font-bold text-center">Our Activies</h1>
+			<p class="text-center">These are our donation activies</p>
 
-			<div class="Our-Blog-flex">
-				<div class="Our-Blog-one">
-					<img src="blog1.jpg" width="230px" height="280px" alt="" />
-					<span class="blog-text"
-						>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-						corrupti!
-					</span>
-					<div class="log">
-						<a href="" class="admin"><i class="fa-solid fa-user"></i> Admin </a>
-						<a href="" class="comments">
-							<i class="fa-regular fa-comments"></i> 15 comments</a
-						>
-					</div>
+			<div
+				class="activies flex overflow-y-hidden overflow-x-scroll sm:overflow-hidden sm:grid sm:grid-cols-1 sm:justify-items-center xl:grid-cols-2"
+			>
+				<div class="activies-item max-w-[560px] max-h-[470px] mt-5">
+					<iframe
+						src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FDeenshelpers%2Fvideos%2F937331997589804%2F&show_text=true&width=560&t=0"
+						width="560"
+						height="429"
+						<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Ffb.watch%2FjzNhKr45oJ&width=500&show_text=true&appId=444118709620993&height=410"
+						width="500"
+						height="410"
+						style="border: none; overflow: hidden"
+						scrolling="no"
+						frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+					></iframe>
 				</div>
-
-				<div class="Our-Blog-one">
-					<img src="blog 2.jpg" width="230px" height="280px" alt="" />
-					<span class="blog-text"
-						>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-						corrupti!
-					</span>
-					<div class="log">
-						<a href="" class="admin"><i class="fa-solid fa-user"></i> Admin </a>
-						<a href="" class="comments">
-							<i class="fa-regular fa-comments"></i> 15 comments</a
-						>
-					</div>
+				<div class="activies-item max-w-[560px] max-h-[470px] mt-5">
+					<iframe
+						src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2FDeenshelpers%2Fvideos%2F662476141516537%2F&show_text=true&width=560&t=0"
+						width="560"
+						height="423"
+						style="border: none; overflow: hidden"
+						scrolling="no"
+						frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+						allowfullscreen="true"
+					></iframe>
 				</div>
-
-				<div class="Our-Blog-one">
-					<img src="blog3.jpg" width="230px" height="280px" alt="" />
-					<span class="blog-text"
-						>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-						corrupti!
-					</span>
-					<div class="log">
-						<a href="" class="admin"><i class="fa-solid fa-user"></i> Admin </a>
-						<a href="" class="comments">
-							<i class="fa-regular fa-comments"></i> 15 comments</a
-						>
-					</div>
+				<div class="activies-item max-w-[560px] max-h-[470px] mt-5">
+					<iframe
+						src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2FDeenshelpers%2Fvideos%2F253655912385050%2F&show_text=true&width=560&t=0"
+						width="560"
+						height="423"
+						style="border: none; overflow: hidden"
+						scrolling="no"
+						frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+						allowfullscreen="true"
+					></iframe>
+				</div>
+				<div class="activies-item max-w-[560px] max-h-[470px] mt-5">
+					<iframe
+						src="https://www.facebook.com/plugins/video.php?height=322&href=https%3A%2F%2Fwww.facebook.com%2FDeenshelpers%2Fvideos%2F920466345179830%2F&show_text=true&width=560&t=0"
+						width="560"
+						height="437"
+						style="border: none; overflow: hidden"
+						scrolling="no"
+						frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+						allowfullscreen="true"
+					></iframe>
 				</div>
 			</div>
 		</section>
 
-		<section class="What-we-do">
+		<section
+			class="What-we-do section min-h-[200px] our-services-area section-img-bg section-padding"
+			data-background="./section-bg1.jpg"
+			style="background-image: url('./section-bg1.jpg.webp')"
+			id="whatwedo"
+		>
 			<div class="what-we-head">
-				<h2>What We Do?</h2>
-				<p>
-					We Believe that we can <br />
-					save more lifes with you
-				</p>
+				<h2 class="text-4xl font-bold">What We Do?</h2>
+				<p>We Believe that we can help more people with you</p>
 			</div>
 			<div class="carying-main-div">
 				<div class="carying-div-1">
@@ -165,10 +226,9 @@
 						<i class="fa-solid fa-bowl-food"></i>
 					</div>
 					<div class="heading-text">
-						<h3>Healthy Food</h3>
+						<h3>Ration Bags</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-							omnis?
+							For people who cannot support themselves financially to eat a decent diet.
 						</p>
 					</div>
 				</div>
@@ -178,10 +238,9 @@
 						<i class="fa-solid fa-bottle-water"></i>
 					</div>
 					<div class="heading-text">
-						<h3>Pure Water</h3>
+						<h3>Food Distribution</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-							omnis?
+							We distribute food parcels in various places like hospitals where people from all over Sindh come.
 						</p>
 					</div>
 				</div>
@@ -191,10 +250,9 @@
 						<i class="fa-solid fa-hands-holding-child"></i>
 					</div>
 					<div class="heading-text">
-						<h3>Healthy Care</h3>
+						<h3>Patients's financial support</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-							omnis?
+							In case of an emergency when patient needs urgent financial support, we provide.
 						</p>
 					</div>
 				</div>
@@ -204,10 +262,9 @@
 						<i class="fa-solid fa-user-graduate"></i>
 					</div>
 					<div class="heading-text">
-						<h3>Primary Education</h3>
+						<h3>Education Relief</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-							omnis?
+							We also support poor people if they don't have money to pay tuition fee.
 						</p>
 					</div>
 				</div>
@@ -217,10 +274,9 @@
 						<i class="fa-solid fa-school"></i>
 					</div>
 					<div class="heading-text">
-						<h3>Residence Facilities</h3>
+						<h3>Animal Relief</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-							omnis?
+							We also support animals in time of need.
 						</p>
 					</div>
 				</div>
@@ -230,200 +286,12 @@
 						<i class="fa-solid fa-people-carry-box"></i>
 					</div>
 					<div class="heading-text">
-						<h3>Social Care</h3>
+						<h3>Aftar</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-							omnis?
+							We do aftar on roadside for poor people during Ramadan.
 						</p>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<section class="volunteer-wapper">
-			<div class="vounteer-section">
-				<div class="volunteer-text">
-					<h1>Become A Volunteer</h1>
-					<p>Let's make a difference in the lives of others</p>
-					<span
-						>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Reprehenderit quis voluptas dicta saepe nemo ab iste blanditiis
-						facilis quas. Recusandae placeat deserunt neque fugit aliquid labore
-						delectus beatae unde soluta!
-					</span>
-				</div>
-				<div class="volunteer-form">
-					<input type="text" placeholder="Name" />
-					<input type="email" placeholder="Email" />
-					<textarea
-						placeholder="Why you want to become a volunteer?"
-						cols="30"
-						rows="10"
-					></textarea>
-					<a href="" class="btn submit">Donate Now</a>
-				</div>
-			</div>
-		</section>
-
-		<section class="Our-Services">
-			<div class="Our-Services-heading">
-				<h1>Our <span> Services </span></h1>
-			</div>
-
-			<div class="Our-Services-Main">
-				<div class="Our-Services-box">
-					<i class="fa-solid fa-briefcase-medical"></i>
-					<h3>Free Checkup</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-						debitis.
-					</p>
-					<a href=""
-						>Learn More <i class="fa-regular fa-square-caret-right icons"></i
-					></a>
-				</div>
-
-				<div class="Our-Services-box">
-					<i class="fa-solid fa-truck-medical"></i>
-					<h3>Ambulance</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-						debitis.
-					</p>
-					<a href=""
-						>Learn More <i class="fa-regular fa-square-caret-right icons"></i
-					></a>
-				</div>
-
-				<div class="Our-Services-box">
-					<i class="fa-solid fa-user-doctor"></i>
-					<h3>Experts Consultancy</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-						debitis.
-					</p>
-					<a href=""
-						>Learn More <i class="fa-regular fa-square-caret-right icons"></i
-					></a>
-				</div>
-
-				<div class="Our-Services-box">
-					<i class="fa-solid fa-pills"></i>
-					<h3>Medicines</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-						debitis.
-					</p>
-					<a href=""
-						>Learn More <i class="fa-regular fa-square-caret-right icons"></i
-					></a>
-				</div>
-
-				<div class="Our-Services-box">
-					<i class="fa-solid fa-bed-pulse"></i>
-					<h3>Bed Facility</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-						debitis.
-					</p>
-					<a href=""
-						>Learn More <i class="fa-regular fa-square-caret-right icons"></i
-					></a>
-				</div>
-
-				<div class="Our-Services-box">
-					<i class="fa-solid fa-heart-pulse"></i>
-					<h3>Total Care</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-						debitis.
-					</p>
-					<a href=""
-						>Learn More <i class="fa-regular fa-square-caret-right icons"></i
-					></a>
-				</div>
-			</div>
-		</section>
-
-		<section class="Our-doctors-wapper">
-			<div class="Our-Doctors-heading">
-				<h1>Our <span>Docotors</span></h1>
-			</div>
-
-			<div class="Our-Doctors-Main">
-				<div class="Our-Doctors-Boxs">
-					<img src="doctor.jpg" width="150px" height="150px" alt="" />
-					<h3>John Deo</h3>
-					<p>Expert Doctor</p>
-					<a href=""><i class="fa-brands fa-facebook-f"></i></a>
-					<a href=""><i class="fa-brands fa-instagram"></i></a>
-					<a href=""><i class="fa-brands fa-linkedin"></i></a>
-					<a href=""><i class="fa-brands fa-twitter"></i></a>
-				</div>
-
-				<div class="Our-Doctors-Boxs">
-					<img src="doctor.jpg" width="150px" height="150px" alt="" />
-					<h3>John Deo</h3>
-					<p>Expert Doctor</p>
-					<a href=""><i class="fa-brands fa-facebook-f"></i></a>
-					<a href=""><i class="fa-brands fa-instagram"></i></a>
-					<a href=""><i class="fa-brands fa-linkedin"></i></a>
-					<a href=""><i class="fa-brands fa-twitter"></i></a>
-				</div>
-
-				<div class="Our-Doctors-Boxs">
-					<img src="doctor.jpg" width="150px" height="150px" alt="" />
-					<h3>John Deo</h3>
-					<p>Expert Doctor</p>
-					<a href=""><i class="fa-brands fa-facebook-f"></i></a>
-					<a href=""><i class="fa-brands fa-instagram"></i></a>
-					<a href=""><i class="fa-brands fa-linkedin"></i></a>
-					<a href=""><i class="fa-brands fa-twitter"></i></a>
-				</div>
-
-				<div class="Our-Doctors-Boxs">
-					<img src="doctor.jpg" width="150px" height="150px" alt="" />
-					<h3>John Deo</h3>
-					<p>Expert Doctor</p>
-					<a href=""><i class="fa-brands fa-facebook-f"></i></a>
-					<a href=""><i class="fa-brands fa-instagram"></i></a>
-					<a href=""><i class="fa-brands fa-linkedin"></i></a>
-					<a href=""><i class="fa-brands fa-twitter"></i></a>
-				</div>
-
-				<div class="Our-Doctors-Boxs">
-					<img src="doctor.jpg" width="150px" height="150px" alt="" />
-					<h3>John Deo</h3>
-					<p>Expert Doctor</p>
-					<a href=""><i class="fa-brands fa-facebook-f"></i></a>
-					<a href=""><i class="fa-brands fa-instagram"></i></a>
-					<a href=""><i class="fa-brands fa-linkedin"></i></a>
-					<a href=""><i class="fa-brands fa-twitter"></i></a>
-				</div>
-
-				<div class="Our-Doctors-Boxs">
-					<img src="doctor.jpg" width="150px" height="150px" alt="" />
-					<h3>John Deo</h3>
-					<p>Expert Doctor</p>
-					<a href=""><i class="fa-brands fa-facebook-f"></i></a>
-					<a href=""><i class="fa-brands fa-instagram"></i></a>
-					<a href=""><i class="fa-brands fa-linkedin"></i></a>
-					<a href=""><i class="fa-brands fa-twitter"></i></a>
-				</div>
-			</div>
-		</section>
-
-		<section class="get-in-touch">
-			<div class="main-get-in">
-				<h2>Get In Touch</h2>
-				<h1>Contact for any query</h1>
-			</div>
-			<div class="get-in-message">
-				<input type="text" placeholder="Your Name" />
-				<input type="email" placeholder="Your Email" />
-				<input type="text" placeholder="Subject" />
-				<textarea placeholder="Message"></textarea>
-				<a href="">Send Message</a>
 			</div>
 		</section>
 
@@ -457,10 +325,6 @@
 						<li>
 							<i class="fa-regular fa-square-caret-right icons"></i> &nbsp; Our
 							Services
-						</li>
-						<li>
-							<i class="fa-regular fa-square-caret-right icons"></i> &nbsp; Our
-							Doctors
 						</li>
 						<li>
 							<i class="fa-regular fa-square-caret-right icons"></i> &nbsp;
@@ -503,5 +367,7 @@
 				</div>
 			</div>
 		</section>
+
+		<script src="/index.js"></script>
 	</body>
 </html>
