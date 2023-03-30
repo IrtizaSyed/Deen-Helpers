@@ -53,3 +53,5 @@ const getAnimationTime = () => {
 
 randomizeText();
 setInterval(randomizeText, getAnimationTime());
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
