@@ -65,7 +65,7 @@
 	height: 100vh;
 	width: 100%;
 	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-		url(banner.jpg);
+		url(./images/banner.jpg);
 	background-position: center;
 	background-size: cover;
 	display: flex;
@@ -187,7 +187,7 @@
 	width: 100%;
 	height: 65vh;
 	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-		url(Money.jpg);
+		url(./images/Money.jpg);
 	background-position: center;
 	background-size: cover;
 	color: bisque;
@@ -207,50 +207,7 @@
 	margin: auto;
 	text-align: center;
 	justify-content: center;
-	/* width: 90%; */
 	margin-top: 20px;
-	/* transform: translate(40%, 80%); */
-}
-
-.form-wrapper-input {
-	display: flex;
-	flex-direction: column;
-	width: 22rem;
-	height: 250px;
-	padding: 15px;
-	background-color: rgba(222, 184, 135, 0.442);
-}
-
-.form-wrapper-input input {
-	height: 30px;
-	padding: 5px 20px;
-	background-color: transparent;
-	border: 1px solid burlywood;
-	margin-top: 10px;
-	color: white;
-}
-
-.form-wrapper-input input::placeholder {
-	color: white;
-}
-
-.donate {
-	display: flex;
-	border: 1px solid burlywood;
-	justify-content: space-around;
-	margin-top: 10px;
-}
-
-.donate a {
-	color: white;
-	text-decoration: none;
-	padding: 10px;
-}
-
-.donate a:hover {
-	background-color: rgba(255, 166, 0);
-	color: white;
-	transition: 1s;
 }
 
 .form-wrapper-text {
@@ -269,21 +226,6 @@
 	line-height: 25px;
 }
 
-.log {
-	border-top: 1px solid darkgray;
-	margin-top: 10px;
-	padding: 5px;
-}
-
-.log a {
-	text-decoration: none;
-	color: black;
-}
-
-.comments {
-	border-left: 1px solid darkgray;
-}
-
 .What-we-do {
 	text-align: center;
 	margin-top: 100px;
@@ -292,8 +234,6 @@
 }
 
 .what-we-head p {
-	/* display: flex; */
-	/* width: 25rem; */
 	margin: auto;
 	font-size: 30px;
 	font-weight: 500;
@@ -332,115 +272,6 @@
 	margin-bottom: 10px;
 }
 
-.main-footer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	background-color: var(--dark);
-	color: white;
-	height: 300px;
-	/* padding: 0px 20px; */
-}
-
-.head-office {
-	margin: 0px 30px;
-}
-
-.head-office h2 {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.head-office span {
-	display: flex;
-	margin-top: 10px;
-	/* line-height: 30px; */
-}
-
-.head-office a {
-	display: inline-flex;
-	margin-top: 30px;
-	padding: 10px;
-	border: 1px solid white;
-	text-decoration: none;
-	color: white;
-}
-
-.head-office a:hover {
-	background-color: white;
-	color: black;
-}
-
-.Popular-links {
-	margin: 0px 30px;
-}
-
-.Popular-links h2 {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.Popular-links ul {
-	list-style: none;
-	line-height: 30px;
-}
-
-.Useful-links {
-	margin: 0px 30px;
-}
-
-.Useful-links h2 {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.Useful-links ul {
-	list-style: none;
-	line-height: 30px;
-}
-
-.Newsletter {
-	margin: 0px 30px;
-}
-
-.Newsletter h2 {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.Newsletter ul {
-	list-style: none;
-	line-height: 30px;
-}
-
-.Newsletter ul input {
-	width: 200px;
-	border: 2px solid burlywood;
-	text-decoration: none;
-	color: burlywood;
-	font-size: 15px;
-	padding: 8px;
-	margin-bottom: 10px;
-}
-
-.Newsletter ul a {
-	display: flex;
-	justify-content: center;
-	width: 200px;
-	border: 2px solid burlywood;
-	box-shadow: 0px 0px 5px 0px burlywood;
-	text-decoration: none;
-	color: burlywood;
-	font-size: 20px;
-	padding: 8px;
-}
-
-.Newsletter ul a:hover {
-	background-color: white;
-	box-shadow: 0px 0px 5px 0px burlywood;
-	color: black;
-}
-
 @media (max-width: 1280px) {
 	.headline-container .headline {
 		width: 60%;
@@ -460,43 +291,17 @@
 	}
 
 	.form-wrapper-donate {
-		width: 100%;
 		height: 30vh;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(Money.jpg);
-		background-position: center;
-		background-size: cover;
-		color: bisque;
-	}
-
-	.main-footer {
-		height: 500px;
-		padding: 20px 20px;
 	}
 }
 
 @media (max-width: 820px) {
 	.form-wrapper-donate {
-		width: 100%;
 		height: 50vh;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(Money.jpg);
-		background-position: center;
-		background-size: cover;
-		color: bisque;
 	}
 }
 
 @media (max-width: 768px) {
-	.headline-section {
-		height: 100vh;
-		width: 100%;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(banner.jpg);
-		background-position: center;
-		background-size: cover;
-	}
-
 	.head {
 		width: 100%;
 		display: block;
@@ -538,73 +343,19 @@
 	}
 
 	.form-wrapper-donate {
-		width: 100%;
 		height: 70vh;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(Money.jpg);
-		background-position: center;
-		background-size: cover;
-		color: bisque;
 	}
 
 	.form-wrapper-donate h1 {
-		display: flex;
-		font-size: 25px;
 		width: 90%;
-		justify-content: center;
-		/* padding: 100px 20px 10px 0px; */
 	}
 
 	.form-wrapper {
 		display: block;
 		margin: auto;
-		text-align: center;
-		justify-content: center;
 		width: 50%;
 		margin-top: 60px;
 		/* transform: translate(40%, 80%); */
-	}
-
-	.form-wrapper-input {
-		display: flex;
-		flex-direction: column;
-		/* width: 20rem; */
-		margin: auto;
-		height: 250px;
-		padding: 15px;
-		background-color: rgba(222, 184, 135, 0.642);
-	}
-
-	.form-wrapper-input input {
-		height: 30px;
-		padding: 5px 20px;
-		background-color: transparent;
-		border: 1px solid burlywood;
-		margin-top: 10px;
-		color: white;
-	}
-
-	.form-wrapper-input input::placeholder {
-		color: white;
-	}
-
-	.donate {
-		display: flex;
-		border: 1px solid burlywood;
-		justify-content: space-around;
-		margin-top: 10px;
-	}
-
-	.donate a {
-		color: white;
-		text-decoration: none;
-		padding: 10px;
-	}
-
-	.donate a:hover {
-		background-color: black;
-		color: white;
-		transition: 1s;
 	}
 
 	.form-wrapper-text {
@@ -629,15 +380,6 @@
 @media (max-width: 540px) {
 	.section {
 		padding: 0px 32px;
-	}
-
-	.headline-section {
-		height: 100vh;
-		width: 100%;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(banner.jpg);
-		background-position: center;
-		background-size: cover;
 	}
 
 	.headline-container h1 {
@@ -692,74 +434,19 @@
 	}
 
 	.form-wrapper-donate {
-		margin-top: 80px;
-		width: 100%;
 		height: 100vh;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(Money.jpg);
-		background-position: center;
-		background-size: cover;
-		color: bisque;
 	}
 
 	.form-wrapper-donate h1 {
-		display: flex;
-		font-size: 25px;
 		width: 50%;
-		justify-content: center;
-		/* padding: 100px 20px 10px 0px; */
 	}
 
 	.form-wrapper {
 		display: block;
 		margin: auto;
-		text-align: center;
-		justify-content: center;
 		width: 90%;
 		margin-top: 60px;
 		/* transform: translate(40%, 80%); */
-	}
-
-	.form-wrapper-input {
-		display: flex;
-		flex-direction: column;
-		/* width: 20rem; */
-		margin: auto;
-		height: 250px;
-		padding: 15px;
-		background-color: rgba(222, 184, 135, 0.642);
-	}
-
-	.form-wrapper-input input {
-		height: 30px;
-		padding: 5px 20px;
-		background-color: transparent;
-		border: 1px solid burlywood;
-		margin-top: 10px;
-		color: white;
-	}
-
-	.form-wrapper-input input::placeholder {
-		color: white;
-	}
-
-	.donate {
-		display: flex;
-		border: 1px solid burlywood;
-		justify-content: space-around;
-		margin-top: 10px;
-	}
-
-	.donate a {
-		color: white;
-		text-decoration: none;
-		padding: 10px;
-	}
-
-	.donate a:hover {
-		background-color: black;
-		color: white;
-		transition: 1s;
 	}
 
 	.form-wrapper-text {
@@ -779,22 +466,9 @@
 		margin-top: 10px;
 		line-height: 25px;
 	}
-
-	.main-footer {
-		height: 700px;
-	}
 }
 
 @media (max-width: 414px) {
-	.headline-section {
-		height: 100vh;
-		width: 100%;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(banner.jpg);
-		background-position: center;
-		background-size: cover;
-	}
-
 	.head {
 		width: 100%;
 		display: block;
@@ -845,73 +519,19 @@
 
 	.form-wrapper-donate {
 		margin-top: 80px;
-		width: 100%;
 		height: 100vh;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(Money.jpg);
-		background-position: center;
-		background-size: cover;
-		color: bisque;
 	}
 
 	.form-wrapper-donate h1 {
-		display: flex;
-		font-size: 25px;
 		width: 50%;
-		justify-content: center;
-		/* padding: 100px 20px 10px 0px; */
 	}
 
 	.form-wrapper {
 		display: block;
 		margin: auto;
-		text-align: center;
-		justify-content: center;
 		width: 90%;
 		margin-top: 20px;
 		/* transform: translate(40%, 80%); */
-	}
-
-	.form-wrapper-input {
-		display: flex;
-		flex-direction: column;
-		/* width: 20rem; */
-		margin: auto;
-		height: 250px;
-		padding: 15px;
-		background-color: rgba(222, 184, 135, 0.642);
-	}
-
-	.form-wrapper-input input {
-		height: 30px;
-		padding: 5px 20px;
-		background-color: transparent;
-		border: 1px solid burlywood;
-		margin-top: 10px;
-		color: white;
-	}
-
-	.form-wrapper-input input::placeholder {
-		color: white;
-	}
-
-	.donate {
-		display: flex;
-		border: 1px solid burlywood;
-		justify-content: space-around;
-		margin-top: 10px;
-	}
-
-	.donate a {
-		color: white;
-		text-decoration: none;
-		padding: 10px;
-	}
-
-	.donate a:hover {
-		background-color: black;
-		color: white;
-		transition: 1s;
 	}
 
 	.form-wrapper-text {
@@ -931,22 +551,9 @@
 		margin-top: 10px;
 		line-height: 25px;
 	}
-
-	.main-footer {
-		height: 800px;
-	}
 }
 
 @media (max-width: 390px) {
-	.headline-section {
-		height: 100vh;
-		width: 100%;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(banner.jpg);
-		background-position: center;
-		background-size: cover;
-	}
-
 	.head {
 		width: 100%;
 		display: block;
@@ -994,75 +601,12 @@
 		margin: auto;
 	}
 
-	.form-wrapper-donate {
-		margin-top: 80px;
-		width: 100%;
-		height: 100vh;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(Money.jpg);
-		background-position: center;
-		background-size: cover;
-		color: bisque;
-	}
-
-	.form-wrapper-donate h1 {
-		display: flex;
-		font-size: 25px;
-		width: 50%;
-		justify-content: center;
-		/* padding: 100px 20px 10px 0px; */
-	}
-
 	.form-wrapper {
 		display: block;
 		margin: auto;
-		text-align: center;
-		justify-content: center;
 		width: 90%;
 		margin-top: 20px;
 		/* transform: translate(40%, 80%); */
-	}
-
-	.form-wrapper-input {
-		display: flex;
-		flex-direction: column;
-		/* width: 20rem; */
-		margin: auto;
-		height: 250px;
-		padding: 15px;
-		background-color: rgba(222, 184, 135, 0.642);
-	}
-
-	.form-wrapper-input input {
-		height: 30px;
-		padding: 5px 20px;
-		background-color: transparent;
-		border: 1px solid burlywood;
-		margin-top: 10px;
-		color: white;
-	}
-
-	.form-wrapper-input input::placeholder {
-		color: white;
-	}
-
-	.donate {
-		display: flex;
-		border: 1px solid burlywood;
-		justify-content: space-around;
-		margin-top: 10px;
-	}
-
-	.donate a {
-		color: white;
-		text-decoration: none;
-		padding: 10px;
-	}
-
-	.donate a:hover {
-		background-color: black;
-		color: white;
-		transition: 1s;
 	}
 
 	.form-wrapper-text {
@@ -1085,15 +629,6 @@
 }
 
 @media (max-width: 393px) {
-	.headline-section {
-		height: 100vh;
-		width: 100%;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(banner.jpg);
-		background-position: center;
-		background-size: cover;
-	}
-
 	.head {
 		width: 100%;
 		display: block;
@@ -1141,75 +676,12 @@
 		margin: auto;
 	}
 
-	.form-wrapper-donate {
-		margin-top: 80px;
-		width: 100%;
-		height: 100vh;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(Money.jpg);
-		background-position: center;
-		background-size: cover;
-		color: bisque;
-	}
-
-	.form-wrapper-donate h1 {
-		display: flex;
-		font-size: 25px;
-		width: 50%;
-		justify-content: center;
-		/* padding: 100px 20px 10px 0px; */
-	}
-
 	.form-wrapper {
 		display: block;
 		margin: auto;
-		text-align: center;
-		justify-content: center;
 		width: 90%;
 		margin-top: 20px;
 		/* transform: translate(40%, 80%); */
-	}
-
-	.form-wrapper-input {
-		display: flex;
-		flex-direction: column;
-		/* width: 20rem; */
-		margin: auto;
-		height: 250px;
-		padding: 15px;
-		background-color: rgba(222, 184, 135, 0.642);
-	}
-
-	.form-wrapper-input input {
-		height: 30px;
-		padding: 5px 20px;
-		background-color: transparent;
-		border: 1px solid burlywood;
-		margin-top: 10px;
-		color: white;
-	}
-
-	.form-wrapper-input input::placeholder {
-		color: white;
-	}
-
-	.donate {
-		display: flex;
-		border: 1px solid burlywood;
-		justify-content: space-around;
-		margin-top: 10px;
-	}
-
-	.donate a {
-		color: white;
-		text-decoration: none;
-		padding: 10px;
-	}
-
-	.donate a:hover {
-		background-color: black;
-		color: white;
-		transition: 1s;
 	}
 
 	.form-wrapper-text {
@@ -1241,23 +713,8 @@
 		text-align: center;
 	}
 
-	.form-wrapper-donate {
-		margin-top: 80px;
-		width: 100%;
-		height: 118vh;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(Money.jpg);
-		background-position: center;
-		background-size: cover;
-		color: bisque;
-	}
-
 	.form-wrapper-donate h1 {
-		display: flex;
-		font-size: 25px;
 		width: 200px;
-		justify-content: center;
-		/* padding: 50px 20px 10px 0px; */
 	}
 }
 
@@ -1269,34 +726,6 @@
 		transform: translate(0, 50%);
 		width: 90%;
 		text-align: center;
-	}
-
-	.form-wrapper-donate {
-		margin-top: 80px;
-		width: 100%;
-		height: 118vh;
-		background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-			url(Money.jpg);
-		background-position: center;
-		background-size: cover;
-		color: bisque;
-	}
-
-	.form-wrapper-donate h1 {
-		display: flex;
-		font-size: 25px;
-		width: 200px;
-		justify-content: center;
-		/* padding: 50px 20px 10px 0px; */
-	}
-
-	.form-wrapper-input {
-		display: flex;
-		flex-direction: column;
-		width: 21rem;
-		height: 250px;
-		padding: 15px;
-		background-color: rgba(222, 184, 135, 0.496);
 	}
 }
 
@@ -1337,5 +766,5 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
-	background-image: url(./section-bg1.jpg);
+	background-image: url(./images/section-bg1.jpg);
 }
